@@ -6,6 +6,7 @@ sap.ui.define([
  ], function (UIComponent, JSONModel, ResourceModel, HelloDialog) {
     "use strict";
     return UIComponent.extend("sap.ui.demo.walkthrough.Component", {
+
        metadata : {
         manifest: "json"
        },
@@ -30,7 +31,9 @@ sap.ui.define([
           this.setModel(i18nModel, "i18n");
 
           // set dialog
-			this._helloDialog = new HelloDialog(this.getRootControl());
+         this._helloDialog = new HelloDialog(this.getRootControl());
+         // create the views based on the url/hash
+			this.getRouter().initialize();
 		},
 
 

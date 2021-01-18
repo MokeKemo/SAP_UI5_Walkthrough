@@ -27,8 +27,9 @@
    xmlns:mvc="sap.ui.core.mvc"
    displayBlock="true">
    <Shell>
-   <App class="myAppDemoWT"> <!--This part was added in step 11 of Walkthrough-->
-      <pages>
+         <App class="myAppDemoWT" id="app"/>
+   <!--App class="myAppDemoWT"--> <!--This part was added in step 11 of Walkthrough-->
+      <!--pages>
          <Page title="{i18n>homePageTitle}">
 
             <headerContent>
@@ -43,6 +44,6 @@
             </content>
          </Page>
       </pages>
-   </App> <!--This part was added in step 11 of Walkthrough-->
+   </App--> <!--This part was added in step 11 of Walkthrough-->
    </Shell> <!--Shell added in step 12-->
 </mvc:View> <!--THIS WAS ADDED FIRST - FROM WALKTHROUGH-->
